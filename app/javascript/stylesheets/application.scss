@@ -1,0 +1,55 @@
+@import 'bootstrap';
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #d3d3d3;
+}
+
+.navbar {
+  background-color: #1a1a1a !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#home-container {
+  margin-top: 2rem;
+  height: 68vh;
+}
+
+#home-splash {
+  height: 100%;
+  background-image: url('../../assets/images/background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-header {
+  padding: 1.5rem 0 6rem 0;
+  font-size: 3rem;
+}
+
+#home-button {
+  margin-top: 4rem;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+

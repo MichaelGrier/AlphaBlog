@@ -1,0 +1,15 @@
+<% if @article.errors.any? %>
+<div class="d-flex justify-content-between alert alert-danger alert-dismissable fade show" role="alert">
+  <div>
+    <h3 class="alert-heading">The following errors prevented the article from being created:</h3>
+
+    <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% end %>
