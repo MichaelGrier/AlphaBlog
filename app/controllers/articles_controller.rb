@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   def create
     # save form inputs to database (whitelist data using .permit())
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
 
     # if save is successful, redirect to articles/<id>. if not, display errors
     if @article.save
