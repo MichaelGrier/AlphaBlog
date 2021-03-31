@@ -1,10 +1,10 @@
-<% if @article.errors.any? %>
+<% if obj.errors.any? %>
 <div class="d-flex justify-content-between alert alert-danger alert-dismissable fade show" role="alert">
   <div>
-    <h3 class="alert-heading">The following errors prevented the article from being created:</h3>
+    <h3 class="alert-heading">The following errors prevented the <%= obj.class.name.downcase %> from being created:</h3>
 
     <ul>
-      <% @article.errors.full_messages.each do |msg| %>
+      <% obj.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
       <% end %>
     </ul>
